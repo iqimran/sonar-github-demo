@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: SonarCloud Scan
+      - name: Run SonarCloud Scan
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
